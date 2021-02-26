@@ -15,6 +15,8 @@
 		7BE25D5D25E947D800C621EF /* BookChose.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7BE25D5B25E947D800C621EF /* BookChose.xcdatamodeld */; };
 		7BE25D6825E947D900C621EF /* BookChoseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE25D6725E947D900C621EF /* BookChoseTests.swift */; };
 		7BE25D7325E947D900C621EF /* BookChoseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE25D7225E947D900C621EF /* BookChoseUITests.swift */; };
+		7BE25D8425E95CF800C621EF /* AddNewBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE25D8325E95CF800C621EF /* AddNewBook.swift */; };
+		7BE25D8925E9605100C621EF /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE25D8825E9605100C621EF /* RatingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		7BE25D6E25E947D900C621EF /* BookChoseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookChoseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BE25D7225E947D900C621EF /* BookChoseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookChoseUITests.swift; sourceTree = "<group>"; };
 		7BE25D7425E947D900C621EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BE25D8325E95CF800C621EF /* AddNewBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewBook.swift; sourceTree = "<group>"; };
+		7BE25D8825E9605100C621EF /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 			children = (
 				7BE25D5025E947D700C621EF /* BookChoseApp.swift */,
 				7BE25D5225E947D700C621EF /* ContentView.swift */,
+				7BE25D8825E9605100C621EF /* RatingView.swift */,
+				7BE25D8325E95CF800C621EF /* AddNewBook.swift */,
 				7BE25D5425E947D800C621EF /* Assets.xcassets */,
 				7BE25D5925E947D800C621EF /* Persistence.swift */,
 				7BE25D5E25E947D800C621EF /* Info.plist */,
@@ -268,6 +274,8 @@
 				7BE25D5A25E947D800C621EF /* Persistence.swift in Sources */,
 				7BE25D5325E947D700C621EF /* ContentView.swift in Sources */,
 				7BE25D5125E947D700C621EF /* BookChoseApp.swift in Sources */,
+				7BE25D8925E9605100C621EF /* RatingView.swift in Sources */,
+				7BE25D8425E95CF800C621EF /* AddNewBook.swift in Sources */,
 				7BE25D5D25E947D800C621EF /* BookChose.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
