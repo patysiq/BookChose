@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B6E5B3C25EECE4700B19F4F /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6E5B3B25EECE4700B19F4F /* EmojiRatingView.swift */; };
+		7B89CE6D25ED7EDF0002A3BE /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B89CE6C25ED7EDF0002A3BE /* DetailView.swift */; };
 		7BE25D5125E947D700C621EF /* BookChoseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE25D5025E947D700C621EF /* BookChoseApp.swift */; };
 		7BE25D5325E947D700C621EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE25D5225E947D700C621EF /* ContentView.swift */; };
 		7BE25D5525E947D800C621EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BE25D5425E947D800C621EF /* Assets.xcassets */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B6E5B3B25EECE4700B19F4F /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
+		7B89CE6C25ED7EDF0002A3BE /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		7BE25D4D25E947D700C621EF /* BookChose.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookChose.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BE25D5025E947D700C621EF /* BookChoseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookChoseApp.swift; sourceTree = "<group>"; };
 		7BE25D5225E947D700C621EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 			children = (
 				7BE25D5025E947D700C621EF /* BookChoseApp.swift */,
 				7BE25D5225E947D700C621EF /* ContentView.swift */,
+				7B6E5B3B25EECE4700B19F4F /* EmojiRatingView.swift */,
+				7B89CE6C25ED7EDF0002A3BE /* DetailView.swift */,
 				7BE25D8825E9605100C621EF /* RatingView.swift */,
 				7BE25D8325E95CF800C621EF /* AddNewBook.swift */,
 				7BE25D5425E947D800C621EF /* Assets.xcassets */,
@@ -274,6 +280,8 @@
 				7BE25D5A25E947D800C621EF /* Persistence.swift in Sources */,
 				7BE25D5325E947D700C621EF /* ContentView.swift in Sources */,
 				7BE25D5125E947D700C621EF /* BookChoseApp.swift in Sources */,
+				7B89CE6D25ED7EDF0002A3BE /* DetailView.swift in Sources */,
+				7B6E5B3C25EECE4700B19F4F /* EmojiRatingView.swift in Sources */,
 				7BE25D8925E9605100C621EF /* RatingView.swift in Sources */,
 				7BE25D8425E95CF800C621EF /* AddNewBook.swift in Sources */,
 				7BE25D5D25E947D800C621EF /* BookChose.xcdatamodeld in Sources */,
