@@ -12,7 +12,8 @@ struct ContentView: View {
     @Environment(\.managedObjectContext) var moc
     @FetchRequest(entity: Book.entity(), sortDescriptors: [
         NSSortDescriptor(keyPath: \Book.title, ascending: true),
-        NSSortDescriptor(keyPath: \Book.author, ascending: true)
+        NSSortDescriptor(keyPath: \Book.author, ascending: true),
+        NSSortDescriptor(keyPath: \Book.date, ascending: true)
     ]) var books: FetchedResults<Book>
 
     @State private var showingAddScreen = false
@@ -28,6 +29,8 @@ struct ContentView: View {
                         VStack(alignment: .leading) {
                             Text(book.title ?? "Unknown Title")
                                 .font(.headline)
+                                .foregroundColor(checkRating(book) ? Color.red : Color.black)
+                            
                             Text(book.author ?? "Unknown Author")
                                 .foregroundColor(.secondary)
                         }
@@ -45,6 +48,15 @@ struct ContentView: View {
                     AddNewBook().environment(\.managedObjectContext, self.moc)
                 }
         }
+    }
+    
+    func checkRating(_ book: Book) -> Bool {
+            switch book.rating {
+            case 1:
+                return true
+            default:
+                return false
+            }
     }
 
     private func deleteItems(offsets: IndexSet) {

@@ -15,10 +15,10 @@ struct DetailView: View {
         GeometryReader { geometry in
             VStack {
                 ZStack(alignment: .bottomTrailing) {
-                    Image(self.book.genre ?? "Fantasy")
+                    Image(getGenre())
                         .frame(maxWidth: geometry.size.width)
 
-                    Text(self.book.genre?.uppercased() ?? "FANTASY")
+                    Text(getGenre().uppercased())
                         .font(.caption)
                         .fontWeight(.black)
                         .padding(8)
@@ -30,19 +30,42 @@ struct DetailView: View {
                 Text(self.book.author ?? "Unknown author")
                     .font(.title)
                     .foregroundColor(.secondary)
+                
+                Text(self.formatedDate())
+                    .foregroundColor(.secondary)
 
                 Text(self.book.review ?? "No review")
                     .padding()
 
                 RatingView(rating: .constant(Int(self.book.rating)))
                     .font(.largeTitle)
-
+                
                 Spacer()
             }
         }
         .navigationBarTitle(Text(book.title ?? "Unknown Book"), displayMode: .inline)
     }
     
+    func formatedDate() -> String {
+        if let launchDate = book.date {
+                let formatter = DateFormatter()
+                formatter.dateStyle = .long
+                return formatter.string(from: launchDate)
+        }
+        return "N/A"
+    }
+    
+    func getGenre() -> String {
+        if let genre = self.book.genre {
+            switch genre {
+            case "":
+                return "Fantasy"
+            default:
+                return genre
+            }
+        }
+        return "Fantasy"
+    }
 }
 
 struct DetailView_Previews: PreviewProvider {
